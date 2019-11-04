@@ -1,14 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/shopping/shopping",
     "pages/myself/myself"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -31,5 +31,6 @@
         "selectedIconPath": "/images/myself2.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
