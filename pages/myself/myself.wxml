@@ -1,2 +1,17 @@
-<!--pages/myself/myself.wxml-->
-<text>pages/myself/myself.wxml</text>
+<view>
+	<view class="top">
+			<view class="avatar-box">
+				<image src="/images/xhs.png" mode="scaleToFill" class="avatar">
+					</image>
+          <view class='word'>标记我的生活</view>
+			</view>
+  </view>
+<view class="info-box">
+      <!-- <text wx:if="login == false" bindtap='goLogin'>点击登录</text> -->
+       <text wx:if='{{isLogin}}'>{{nickName}}</text>
+        <navigator url="../login/login" wx:else class='green-btn'>点击登录</navigator>
+        <navigator url="../setting/setting" wx:if='{{isLogin}}'>
+					<text class="setting-txt">个人设置</text>
+				</navigator>
+			</view>
+	</view>
