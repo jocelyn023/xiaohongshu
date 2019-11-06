@@ -1,0 +1,50 @@
+<!--graceUI/components/graceIMMsg.wxml-->
+<view class='grace-im'>
+  <block wx:for="{{msgs}}" wx:for-item="item" wx:key="index">
+    <view class="grace-im-msg {{userid == item.id ? 'grace-im-msg-right' : 'grace-im-msg-left'}}" wx:if="{{item.ctype == 1}}">
+      <view class="face"><image src="{{item.face}}" mode="widthFix"></image></view>
+      <view>
+        <view class="grace-im-name">
+          <text wx:if="{{userid != item.id}}">{{item.name}}</text>
+          <text>{{item.date}}</text>
+        </view>
+        <view class='grace-im-content-in'>
+          <view class="content">{{item.msg}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="grace-im-msg {{userid == item.id ? 'grace-im-msg-right' : 'grace-im-msg-left'}}" wx:if="{{item.ctype == 2}}">
+      <view class="face"><image src="{{item.face}}" mode="widthFix"></image></view>
+      <view>
+        <view class="grace-im-name">
+          <block wx:if="{{userid != item.id}}">{{item.name}}</block>
+          <text>{{item.date}}</text>
+        </view>
+        <view class='grace-im-content-in'>
+          <view class="imgs">
+            <image src="{{item.msg}}" mode="widthFix" data-index='{{index}}' bindtap='showImgs'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="grace-im-msg {{userid == item.id ? 'grace-im-msg-right' : 'grace-im-msg-left'}}" wx:if="{{item.ctype == 3}}">
+      <view class="face"><image src="{{item.face}}" mode="widthFix"></image></view>
+      <view>
+        <view class="grace-im-name">
+          <block wx:if="{{userid != item.id}}">{{item.name}}</block>
+          <text>{{item.date}}</text>
+        </view>
+        <view class='grace-im-content-in'>
+          <view class="content grace-im-voice-msg {{index == playIndex ? 'grace-im-playing' : ''}}" data-voice="{{item.msg}}" data-index='{{index}}' bindtap='playVoice' style="width:{{480 * item.len / 60}}rpx;">
+            <text class="grace-iconfont icon-voice2"></text> {{item.len}}"
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 系统消息 -->
+    <view class="grace-im-msg" wx:if="{{item.ctype == 4}}">
+        <view class="grace-im-system-msg">{{item.msg}}</view>
+    </view>
+  </block>
+  <view style="height:100rpx; width:100%"></view>
+</view>

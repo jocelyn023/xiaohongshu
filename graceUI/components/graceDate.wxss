@@ -1,0 +1,21 @@
+/* graceUI/components/graceDate.wxss */
+.grace-date{position:fixed; z-index:9998; vertical-align:top; left:0; top:0; width:710rpx; padding:20rpx; height:100%; background:#FFF;}
+.grace-date-header{display:flex; justify-content:center;}
+.grace-date-header-btn{font-size:38rpx; line-height:88rpx; padding:0 10px;}
+.grace-date-header-date{line-height:88rpx; font-size:32rpx; font-weight:700;}
+.grace-date-week{height:auto; display:flex; flex-wrap:nowrap; width:702rpx; margin:0 auto;}
+.grace-date-week view{width:96rpx; height:80rpx; font-size:32rpx; line-height:80rpx; text-align:center; margin:2rpx}
+.grace-date-days{padding:10rpx 0; display:flex; flex-wrap:wrap; width:702rpx; margin:0 auto;}
+.grace-date-days .items{width:96rpx; text-align:center; height:96rpx; line-height:96rpx; margin:2rpx; background:#F1F2F3; font-size:30rpx;}
+.grace-date-days .current{background:#00B26A;}
+.grace-date-days .current view{color:#FFFFFF;}
+.grace-date-day{height:30rpx; line-height:30rpx; margin-top:30rpx; justify-content:center;}
+.grace-date-nl{height:22rpx; line-height:22rpx; color:#888888; font-size:18rpx; justify-content:center;}
+.grace-date-time-title{margin-top:15px; line-height:2em; text-align:center;}
+.grace-date-time{width:80%; margin:8px 10%; display:flex; flex-wrap:nowrap;}
+.grace-date-time .timer{width:50%;  height:40px; border-top:1px solid #F0F0F0; border-bottom:1px solid #F0F0F0;}
+.grace-date-time .timer picker{width:100%; height:40px; line-height:40px; text-align:center;}
+.grace-date-time .timer picker view{line-height:40px; text-align:center;}
+.grace-date-time .timer-spliter{width:30px; flex-shrink:0; text-align:center; line-height:40px; font-size:20px;}
+.grace-date-btn{width:80%; margin:0 10%; margin-top:20px; text-align:center; line-height:46px;}
+.grace-date-close{text-align:center; color:#999999; margin-top:22px;}

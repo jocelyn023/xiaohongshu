@@ -1,0 +1,9 @@
+<!--graceUI/components/graceFullLoading.wxml-->
+<view class="grace-full-loading" wx:if="{{graceFullLoading}}">
+  <view class="content">
+    <view class="image">
+      <image src="{{logoUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="text">{{text}}</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<!--graceUI/components/graceIMFooter.wxml-->
+<view class="grace-footer">
+  <view class="grace-im-input">
+    <input type='text' confirm-type="send" value='{{inputMsg}}' fixed cursor-spacing='20' bindconfirm='sendTextMsg'></input>			
+  </view>
+  <view class="grace-im-menus graceIMFonts icon-voice" style="{{recShow === true ? 'color:#00BA62;' : ''}}" bindtap="showRec"></view>
+  <view class="grace-im-menus graceIMFonts icon-photograph" bindtap='chooseImg'></view>
+</view>
+<!-- 语音输入 -->
+<view class="grace-im-record" wx:if="{{recShow}}">
+  <view class="grace-im-record-txt">{{recTxt}}</view>
+  <view class="grace-im-record-btn {{recing ? 'grace-im-recording' : ''}}" bindtap="rec"></view>
+  <view class="grace-im-record-txt" bindtap="sendVoiceMsg" style="margin-top:12px; color:#00BA62;" wx:if="{{voiceLen > 0}}">
+    发送语音
+  </view>
+  <view class="grace-im-record-close graceIMFonts icon-close" bindtap="closeRec" hidden="{{recing}}"></view>
+</view>

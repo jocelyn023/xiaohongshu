@@ -1,0 +1,4 @@
+<!--graceUI/components/graceToTop.wxml-->
+<view class="grace-totop" wx:if="{{top > 100}}" bindtap="totop">
+  <text class="totopfont icon-top" style="color:{{color}}"></text>
+</view>

@@ -1,0 +1,6 @@
+<!--graceUI/components/graceNumberBox.wxml-->
+<view class="grace-number-box">
+	<view class="doBtn" bindtap="reduce">-</view>
+	<input type="number" value="{{value}}" disabled="{{disabled}}" bindblur="blur"></input>
+	<view class="doBtn" bindtap="add">+</view>
+</view>

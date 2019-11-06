@@ -1,0 +1,17 @@
+<view class="grace-coupons" style="background:{{coupon.color}};">
+  <view class="left" style="background:{{coupon.ltBg}}; height:{{coupon.height}};">
+    <view class="number">
+      <view class="show" style="color:{{coupon.color}}"><text>{{coupon.unit}}</text>{{coupon.number}}</view>
+      <view class="txt" style="color:{{coupon.color}}">{{coupon.txt}}</view>
+    </view>
+    <view class="body">
+      <view class="title">{{coupon.title}}</view>
+      <view class="desc">{{coupon.desc}}</view>
+    </view>
+    <view class="status" wx:if="{{coupon.drawed}}" style="background:{{coupon.color}}">{{coupon.drawed}}</view>
+  </view>
+  <view class="right" style="height:{{coupon.height}};">{{coupon.btn}}</view>
+  <view class="sawtooth" style="height:{{coupon.height}};">
+    <view class="circular" wx:for="1234567890" wx:key="index"></view>
+  </view>
+</view>

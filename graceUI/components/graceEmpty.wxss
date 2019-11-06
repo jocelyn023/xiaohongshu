@@ -1,0 +1,12 @@
+.grace-empty{width:100%;}
+.grace-empty-icon{text-align:center;}
+.grace-empty-text{padding:20rpx 0; text-align:center;}
+@font-face{
+	font-family:"graceEmptyFont"; 
+	src:url('https://at.alicdn.com/t/font_1348648_qbg88v58i.ttf') format('truetype');
+}
+.grace-empty-icon1:before{font-family: "graceEmptyFont" !important; content:"\e736";}
+.grace-empty-icon2:before{font-family: "graceEmptyFont" !important; content:"\e600";}
+.grace-empty-icon3:before{font-family: "graceEmptyFont" !important; content:"\e704";}
+.grace-empty-icon4:before{font-family: "graceEmptyFont" !important; content:"\e66e";}
+.grace-empty-icon5:before{font-family: "graceEmptyFont" !important; content:"\e644";}

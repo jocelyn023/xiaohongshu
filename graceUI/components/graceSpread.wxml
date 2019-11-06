@@ -1,0 +1,4 @@
+<view class="grace-spread" style="height:{{height}}">
+  <slot></slot>
+  <view wx:if="{{isBtn}}" style="color:{{btnColor}};" class="btn" bindtap="spreadContent">{{btnTxt}}<text class="gsd-arrow-down" style="color:{{btnColor}};" ></text></view>
+</view>

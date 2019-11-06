@@ -1,0 +1,3 @@
+.grace-swiper-card-item{box-sizing: border-box; font-size:0; overflow:hidden;}
+.grace-swiper-card-image{width:100%;}
+.grace-swiper-card-img-small{transform:scaleY(0.92); opacity:0.85; transform-origin:center center;}

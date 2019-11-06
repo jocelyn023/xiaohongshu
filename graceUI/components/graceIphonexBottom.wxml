@@ -1,0 +1,2 @@
+<view class="grace-iphonex-bottom {{isFixed ? 'grace-iphonex-bottom-fixed' : ''}}" style="height:{{height}}; background:{{bgcolor}};"></view>
+<view style="width:100%; height:{{height}}" wx:if="isFixed"></view>

@@ -1,0 +1,11 @@
+<!--graceUI/components/graceStar.wxml-->
+<view class="grace-stars">
+  <view 
+  class="grace-stars-items" wx:for="{{totalstars}}" 
+  wx:key="index" 
+  bindtap="changnum" 
+  data-val="{{index}}">
+    <view class="grace-star-icon" style="color:{{activecolor}}; font-size:{{fontSize}};" wx:if="{{starnum > index}}"></view>
+    <view class="grace-star-icon" style="color:{{color}}; font-size:{{fontSize}};" wx:else></view>
+  </view>
+</view>

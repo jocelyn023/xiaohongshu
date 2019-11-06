@@ -1,0 +1,13 @@
+<view class="graceIconClasses">
+  <navigator url="{{item.path}}" opopen-type="{{item.openType}}" class="item" style="background:{{item.bgColor}};" wx:for="{{classes}}" wx:key="index">
+    <image src="{{item.icon}}" mode="widthFix"></image>
+    <view class="content">
+      <view>
+        <view class="image"><image src="{{item.icon}}" mode="widthFix"></image></view>
+        <view class="txt">
+          {{item.txt}}<text>{{item.smallTxt}}</text>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

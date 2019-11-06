@@ -1,0 +1,6 @@
+<view class="grace-box-banner grace-border-radius-small" style="margin:10px 0;">
+	    <view class="garce-items" wx:for="{{items}}" wx:key="index">
+	        <view class="line1">{{item[0]}}<text>{{item[1]}}</text></view>
+	        <view class="line2">{{item[2]}}</view>
+	    </view>
+	</view>

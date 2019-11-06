@@ -1,0 +1,7 @@
+/* graceUI/components/graceSpeaker.wxss */
+.grace-swiper-msg{width:100%; padding:10rpx 0; display:flex; flex-wrap:nowrap;}
+.grace-swiper-msg-icon{height:60rpx; line-height:60rpx; margin-right:20rpx; flex-shrink:0;}
+.grace-swiper-msg-icon view{height:60rpx; line-height:60rpx;}
+.grace-swiper-msg swiper{width:100%; height:60rpx; overflow:hidden;}
+.grace-swiper-msg swiper-item{line-height:60rpx; height:60rpx; overflow:hidden;}
+.grace-swiper-msg navigator{line-height:60rpx; height:60rpx; overflow:hidden;}

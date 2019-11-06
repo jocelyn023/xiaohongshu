@@ -1,0 +1,3 @@
+<view class="ganimate-show grace-alert" style="background:{{background}}; top : {{top + 'px'}};" wx:if="{{show}}">
+  <slot></slot>
+</view>

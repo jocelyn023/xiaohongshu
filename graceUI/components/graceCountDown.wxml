@@ -1,0 +1,15 @@
+<!--graceUI/components/countdown.wxml-->
+<view class="grace-countdown">
+  <view class="grace-countdown-numbers" wx:if="{{d > 0}}" 
+  style="border-color:{{borderColor}}; width:{{width}}; height:{{width}}; font-size:{{fontSize}}; line-height:{{width}}; color:{{fontColor}}; background:{{bgrColor}};">{{d}}</view>
+  <view class="grace-countdown-splitor" style="color:{{splitorColor}}; line-height:{{width}}; font-size:{{fontSize}};"  wx:if="{{d > 0}}">{{splitorText[0]}}</view>
+	<view class="grace-countdown-numbers" 
+  style="border-color:{{borderColor}}; width:{{width}}; height:{{width}}; font-size:{{fontSize}}; line-height:{{width}}; color:{{fontColor}}; background:{{bgrColor}};">{{h}}</view>
+  <view class="grace-countdown-splitor" style="color:{{splitorColor}}; line-height:{{width}}; font-size:{{fontSize}};">{{splitorText[1]}}</view>
+	<view class="grace-countdown-numbers" 
+  style="border-color:{{borderColor}}; width:{{width}}; height:{{width}}; font-size:{{fontSize}}; line-height:{{width}}; color:{{fontColor}}; background:{{bgrColor}};">{{i}}</view>
+	<view class="grace-countdown-splitor" style="color:{{splitorColor}}; line-height:{{width}}; font-size:{{fontSize}};">{{splitorText[2]}}</view>
+	<view class="grace-countdown-numbers" 
+  style="border-color:{{borderColor}}; width:{{width}}; height:{{width}}; font-size:{{fontSize}}; line-height:{{width}}; color:{{fontColor}}; background:{{bgrColor}};">{{s}}</view>
+  <view class="grace-countdown-splitor" style="color:{{splitorColor}}; line-height:{{width}}; font-size:{{fontSize}};">{{splitorText[3]}}</view>
+</view>

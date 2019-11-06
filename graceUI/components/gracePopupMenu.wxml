@@ -1,0 +1,5 @@
+<!--graceUI/components/gracePopupMenu.wxml-->
+<view class="grace-popup-mask" wx:if="{{show}}" catchtap="hideMenu"></view>
+<view class="grace-popup-menu" hidden="{{!show}}" style="top:{{top}}px; background:{{bgColor}}; width:{{menuWidth}}">
+  <slot></slot>
+</view>

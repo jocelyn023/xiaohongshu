@@ -1,0 +1,5 @@
+<!--graceUI/components/graceLoading.wxml-->
+<view class="grace-loading" wx:if="{{show && loadingType < 5}}">
+	<view class="grace-loading-icon" wx:if="{{loadingType === 1}}" style="color:{{iconColor}}"></view>
+	<text style="color:{{textColor}}">{{loadingText[loadingType]}}</text>
+</view>

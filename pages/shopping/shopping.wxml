@@ -1,2 +1,56 @@
-<!--pages/shopping/shopping.wxml-->
-<text>pages/shopping/shopping.wxml</text>
+<view class="grace-body">
+  <view class="grace-line-title grace-margin-top">
+    <view class="line"></view>
+    <view class="title">购物车</view>
+    <view class="line"></view>
+  </view>
+  <!-- 购物车为空 -->
+  <view wx:if="{{shoppingCard.length < 1}}" style="margin-top:150px;">
+    <graceEmpty iconSize="168" iconType="4" iconColor="#E1E1E1"></graceEmpty>
+    <view class="grace-text-center grace-margin-top">
+      <text class="grace-text-small">您的购物车空空如也 ~ </text>
+      <text class="grace-text-small grace-blue" style="margin-left:20rpx;">去购物</text>
+    </view>
+  </view>
+  <!-- 购物车为空 -->
+  <view class="grace-shoppingcard" wx:for="{{shoppingCard}}" wx:key="index">
+    <view class="grace-title">
+      <view>
+        <graceCheckBtn style="margin-right:12px;" bind:change="shopChange" parameter="{{[index]}}" data-shopindex="{{item.index}}" checked="{{item.checked}}"></graceCheckBtn>{{item.shopName}}
+      </view>
+      <navigator class="grace-more">进店<text class="grace-icons icon-arrow-right"></text></navigator>
+    </view>
+    <view class="goods" wx:for="{{item.items}}" wx:for-index="indexItem" wx:key="indexItem">
+      <graceCheckBtn checked="{{item.checked}}" bind:change="itemChange" parameter="{{[index+'-'+indexItem]}}" style="margin:12px 12px 0 0;"></graceCheckBtn>
+      <image src="{{item.img}}" mode="widthFix"></image>
+      <view class="body">
+        <view class="goods-title">{{item.goodsName}}</view>
+        <view class="goods-price">
+          ￥{{item.price}}
+          <view class="goods-number">
+            <graceNumberBox 
+            index="{{indexItem}}" value="{{item.count}}" 
+            maxNum="{{100}}" minNum="{{1}}" 
+            datas="{{index + ''}}" 
+            bind:change="change"></graceNumberBox>
+          </view>
+        </view>
+        <view class="goods-remove grace-icons icon-remove" bindtap="removeGoods" id="{{'removeIndex_' + index + '_' + indexItem}}">
+          <text>删除</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="height:120rpx;"></view>
+  <!-- 底部  -->
+  <view class="grace-footer grace-nowrap grace-flex-vcenter" v-if="shoppingCard.length >= 1">
+    <view class="grace-shoppingcard-checkbtn grace-nowrap grace-flex-vcenter">
+      <graceCheckBtn checked="{{true}}" bind:change="itemChangeAll"></graceCheckBtn>
+      <text class="grace-shoppingcard-check-text">{{selectText}}</text>
+    </view>
+    <view class="grace-shoppingcard-text">
+      合计 : <text style="font-size:36upx; color:#F00;">￥{{totalprice}}</text>
+    </view>
+    <button type="warn" style="background:#E55D52; width:260rpx; flex-shrink:0;" bindtap="checkout">立即结算</button>
+  </view>
+</view>

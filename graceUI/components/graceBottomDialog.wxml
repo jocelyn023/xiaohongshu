@@ -1,0 +1,7 @@
+<!--graceUI/components/graceBottomDialog.wxml-->
+<view class="grace-btdialog-shade" wx:if="{{show}}" bindtap="closeDialog">
+  <view class="dialog gdIn" catchtap="stopFun" style="padding-bottom:{{isIpx ? '68rpx' : '0'}};">
+    <view class="title"><slot name="btns"></slot></view>
+    <view class="content" catchtap="stopFun"><slot name="content"></slot></view>
+  </view>
+</view>

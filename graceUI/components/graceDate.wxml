@@ -1,0 +1,49 @@
+<!--graceUI/components/graceDate.wxml-->
+<view class="grace-date" wx:if="{{show}}">
+	<view class="grace-date-header">
+    <view class="grace-date-header-btn" bindtap="prevYear">
+      <text decode="{{true}}">&lt;&lt;</text>
+    </view>
+		<view class="grace-date-header-btn" bindtap="prevMonth">
+      <text decode="{{true}}">&lt;</text>
+    </view>
+		<view class="grace-date-header-date">{{cYear}}年{{cMonth}}月</view>
+		<view class="grace-date-header-btn" bindtap="nextMonth">
+      <text decode="{{true}}">&gt;</text>
+    </view>
+    <view class="grace-date-header-btn" bindtap="nextYear">
+      <text decode="{{true}}">&gt;&gt;</text>
+    </view>
+	</view>
+	<view class="grace-date-week">
+		<view wx:for="{{weeks}}" wx:key="{{index}}">{{item}}</view>
+	</view>
+	<view class="grace-date-days">
+		<view class="items {{currentDay == cYear+'-'+cMonth+'-'+item.date ? 'current' : ''}}" bindtap="chooseDate" data-date="{{cYear}}-{{cMonth}}-{{item.date}}" wx:for="{{days}}" wx:key="{{index}}" style="background:{{item == '' ? 'none' : ''}}">
+			<view class="grace-date-day">{{item.date}}</view>
+			<view class="grace-date-nl">{{item.nl}}</view>
+		</view>
+	</view>
+  <view wx:if="{{isTime}}">
+			<view class="grace-date-time-title">时间</view>
+			<view class="grace-date-time">
+				<view class="timer">
+					<picker mode="selector" range="{{hours}}" bindchange="hourChange">
+						<view>{{hours[currentHourD]}}</view>
+					</picker>
+				</view>
+				<view class="timer-spliter">
+					:
+				</view>
+				<view class="timer">
+					<picker mode="selector" range="{{minutes}}" bindchange="minuteChange">
+						<view>{{minutes[currenMinuteD]}}</view>
+					</picker>
+				</view>
+			</view>
+			<view class="grace-date-btn">
+				<button type="primary" bindtap="submit">确定</button>
+			</view>
+		</view>
+    <view class="grace-date-close" bindtap="close">取消选择</view>
+</view>

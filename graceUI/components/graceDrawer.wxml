@@ -1,0 +1,8 @@
+<!--graceUI/components/graceDrawer.wxml-->
+<view class="grace-drawer-shade" wx:if="{{show}}" bindtap="closeDrawer">
+  <view 
+  class="nav {{direction == 'left' ? 'gdSlideLeft' : 'gdSlideRight'}}" style="width:{{width}};" 
+  catchtap="stopFun">
+    <view class="navMain"><slot></slot></view>
+  </view>
+</view>

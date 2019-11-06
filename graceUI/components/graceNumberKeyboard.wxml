@@ -1,0 +1,21 @@
+<!--graceUI/components/graceNumberKeyboard.wxml-->
+<view class="grace-mask" bindtap="done" wx:if="{{show}}"></view>
+<view class="grace-keyboard" wx:if="{{show}}">
+  <view class="keys-left">
+    <view class="keys" data-keynumber="1" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">1</view>
+    <view class="keys" data-keynumber="2" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">2</view>
+    <view class="keys" data-keynumber="3" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">3</view>
+    <view class="keys" data-keynumber="4" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">4</view>
+    <view class="keys" data-keynumber="5" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">5</view>
+    <view class="keys" data-keynumber="6" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">6</view>
+    <view class="keys" data-keynumber="7" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">7</view>
+    <view class="keys" data-keynumber="8" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">8</view>
+    <view class="keys" data-keynumber="9" hover-class='keydown' hover-stay-time="100" bindtap="inputNow">9</view>
+    <view class="keys" style="width:259rpx;" hover-class='keydown' hover-stay-time="100" data-keynumber="0" bindtap="inputNow">0</view>
+    <view class="keys" style="width:259rpx;" hover-class='keydown' hover-stay-time="100" data-keynumber="." bindtap="inputNow">.</view>
+  </view>
+  <view class="keys-right">
+    <view class="keys graceNumberKeyboardFont-delete" hover-class='keydown' hover-stay-time="100" bindtap="deleteNow"></view>
+    <view class="keys grace-keyboard-done" bindtap="done">{{doneBtnName}}</view>
+  </view>
+</view>

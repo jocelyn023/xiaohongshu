@@ -1,0 +1,4 @@
+<!--graceUI/components/graceCirProgress.wxml-->
+<view style='width:{{width}}px;'>
+  <canvas class="cir" style="width:{{width}}px; height:{{width}}px;" canvas-id="canvasArc"></canvas>
+</view>

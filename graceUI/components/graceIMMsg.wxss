@@ -1,0 +1,24 @@
+/* graceUI/components/graceIMMsg.wxss */
+.grace-im{padding:20rpx 30rpx;}
+.grace-im-system-msg{background:#C1C1C1; width:auto; color:#FFF; font-size:12px; line-height:1.5; padding:5px 10px; margin:0 auto; display:inline-block; border-radius:3px;}
+.grace-im-msg{margin:20px 0; flex-wrap:nowrap; display:flex;}
+.grace-im-msg .face{width:40px; height:40px; overflow:hidden; flex-shrink:0;}
+.grace-im-msg .face image{width:100%; border-radius:3px;}
+.grace-im-name{line-height:24rpx; height:24rpx; font-size:24rpx; padding-bottom:16rpx; text-indent:8px; color:#00B26A;  padding-left:8px;}
+.grace-im-name text:last-child{color:#666; font-size:20rpx; margin-left:10px;}
+.grace-im-msg .content{width:auto; padding:8px 12px; margin:0 15px; max-width:500rpx; background:#FFF; line-height:1.6; border-radius:3px; position:relative; word-break:break-all; display:inline-block;}
+.grace-im-msg .imgs{margin-left:12px;}
+.grace-im-msg .imgs image{width:500rpx; height:auto; font-size:0; border-radius:3px;}
+.grace-im-msg .content::after {content: ""; position: absolute; height:10px; width:10px; background:#FFF; top:18px;}
+.grace-im-msg-left .content::after {left:-5px; transform: translate(0,-50%) rotate(45deg);}
+.grace-im-msg-right{flex-direction:row-reverse;}
+.grace-im-msg-right .content{background:#00B26A; color:#FFF;}
+.grace-im-msg-right .grace-im-name{display:flex; flex-direction:row-reverse;  padding-left:0px;  padding-right:10px;}
+.grace-im-msg-right .content::after {right:-5px; transform: translate(0,-50%) rotate(45deg); background:#00B26A;}
+.grace-im-msg-right .grace-im-content-in{display:flex; justify-content:flex-end;}
+.grace-im-msg-right .imgs{margin:0; margin-right:12px;}
+.grace-im-voice-msg{font-size:20rpx; min-width:100rpx; line-height:40rpx !important;}
+.grace-im-voice-msg text{font-size:40rpx;}
+.grace-im-playing{background:#00B26A !important; color:#FFF; border-color:#00B26A !important;}
+.grace-im-playing text{color:#FFF;}
+.grace-im-playing::after{background:#00B26A !important;}

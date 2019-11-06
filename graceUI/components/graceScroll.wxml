@@ -1,0 +1,5 @@
+<view class="grace-scroll-body">
+  <view class="grace-scroll-msg grace-scrolling">
+    <slot></slot>
+  </view>
+</view>

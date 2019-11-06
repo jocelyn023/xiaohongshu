@@ -1,0 +1,6 @@
+.grace-box-banner{padding:26rpx 0; display:flex; flex-wrap:nowrap; overflow:hidden; background:#FFF;}
+.grace-box-banner > .garce-items{width:100%; border-right:1px solid #F1F2F3; justify-content:center; line-height:1.5em; text-align:center;}
+.grace-box-banner > .garce-items:last-child{border:none;}
+.grace-box-banner .line1{font-size:36rpx; line-height:60rpx; overflow:hidden; text-align:center;}
+.grace-box-banner .line1 text{font-size:24rpx; color:#999999; line-height:65rpx; margin-left:8rpx;}
+.grace-box-banner .line2{font-size:24rpx; color:#999999; line-height:32rpx; text-align:center;}

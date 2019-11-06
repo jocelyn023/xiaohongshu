@@ -1,0 +1,5 @@
+<view class="grace-header" style="background:{{background}}; height:{{height+'px'}}; padding-top:{{top+'px'}}; z-index:{{zIndex}};">
+  <view class="grace-header-main"><slot></slot></view>
+  <view style="width:{{BoundingWidth}}; height:10px;"></view>
+</view>
+<view style="height:{{(height + top)+'px'}}; width:500rpx;" wx:if="{{isSeize}}"></view>

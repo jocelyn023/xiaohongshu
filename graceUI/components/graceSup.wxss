@@ -1,0 +1,4 @@
+/* graceUI/components/graceSup.wxss */
+.grace-sup{padding:0; display:flex; flex-wrap:nowrap; align-items:flex-start;}
+.grace-sup .text{font-size:32rpx; line-height:56rpx;}
+.grace-sup .sup{font-size:26rpx; line-height:26rpx; margin-left:10rpx; margin-top:6rpx;}

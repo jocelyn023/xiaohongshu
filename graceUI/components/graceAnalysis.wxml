@@ -1,0 +1,21 @@
+<view class="grace-editor-show">
+  <block wx:for="{{article}}" wx:key="index">
+    <view wx:if="{{item.type == 'txt'}}" class="item"><text class="text">{{item.content}}</text></view>
+    <view class="item grace-flex grace-flex-center" wx:elif="{{item.type == 'center'}}">
+      <view class="center-title">{{item.content}}</view>
+    </view>
+    <view class="imgs" wx:elif="{{item.type == 'img'}}">
+      <image src="{{item.content}}" data-url="{{item.content}}" catchtap="showImgs" mode="widthFix"></image>
+    </view>
+    <view class="item" wx:elif="{{item.type == 'quote' || item.type == 'pre'}}">
+      <view class="quote"><text>{{item.content}}</text></view> 
+    </view>
+    <view class="item" wx:elif="{{item.type == 'strong'}}">
+      <text class="strong">{{item.content}}</text>
+    </view>
+    <view class="item" wx:elif="{{item.type == 'link'}}">
+      <text style="color:#3688FF; font-size:28rpx;">{{item.content}}</text>
+    </view>
+    <view class="item spline" wx:elif="{{item.type == 'spline'}}">● ● ●</view>
+  </block>
+</view>

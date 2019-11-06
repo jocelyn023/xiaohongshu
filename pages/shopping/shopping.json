@@ -1,1 +1,7 @@
-{}
+{
+  "usingComponents": {
+    "graceEmpty": "../../graceUI/components/graceEmpty",
+    "graceCheckBtn": "../../graceUI/components/graceCheckBtn",
+    "graceNumberBox": "../../graceUI/components/graceNumberBox"
+  }
+}

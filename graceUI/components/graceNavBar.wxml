@@ -1,0 +1,17 @@
+<scroll-view 
+class="grace-nav-bar {{isCenter ? 'grace-nav-center' : ''}}" scroll-x="{{true}}"  
+scroll-into-view="{{'tab-'+currentIndex}}">
+  <view class="nav-item" id="{{'tab-'+index}}" 
+  style="width:{{size < 1 ? 'auto' : size+'rpx'}}; margin-right:{{margin+'rpx'}}; padding:0rpx {{padding}};" wx:for="{{items}}" 
+  wx:key="{{index}}" bindtap="navchang" data-index="{{index}}">
+    <view class="nav-item-main">
+      <view 
+      class="nav-item-title {{currentIndex == index ? 'nav-active' : ''}}" 
+      style="color:{{currentIndex == index ? activeColor : color}}; text-align : {{textAlign}}; line-height:{{lineHeight}}; font-size:{{fontSize}};"
+      >{{item}}</view>
+      <view class="nav-active-line" 
+      style="background:{{activeLineBg}}; width:{{activeLineWidth}}; height:{{activeLineHeight}};" 
+      wx:if="{{currentIndex == index}}"></view>
+    </view>
+  </view>
+</scroll-view>

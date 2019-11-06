@@ -1,0 +1,9 @@
+<!--graceUI/components/graceDialog.wxml-->
+<view class="grace-dialog-shade" wx:if="{{show}}" catchtap="closeDialog" catchtouchmove='stopFun'>
+  <view class="dialog gdFadeIn" catchtap="stopFun" style="width:{{width}}">
+    <view class="title" wx:if="{{isTitle}}">{{title}}</view>
+    <view class="content" catchtap="stopFun"><slot name="content"></slot></view>
+    <view class="close-btn" style="color:{{closeBtnColor}}" wx:if="{{isCloseBtn}}" bindtap="closeDialog"></view>
+    <view class="btns" wx:if="{{isBtns}}"><slot name="btns"></slot></view>
+  </view>
+</view>

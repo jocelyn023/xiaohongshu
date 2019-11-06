@@ -1,1 +1,28 @@
-/* pages/shopping/shopping.wxss */
+page {
+  background: #f5f6f7;
+}
+
+.grace-shoppingcard-checkbtn {
+  width: 180rpx;
+  margin-left: 50rpx;
+  flex-shrink: 0;
+}
+
+.grace-shoppingcard-check-text {
+  font-size: 28rpx;
+  margin-left: 12rpx;
+  color: #666;
+}
+
+.grace-shoppingcard-text {
+  width: 700rpx;
+  line-height: 100rpx;
+}
+
+.grace-line-title > .line {
+  width: 50rpx;
+  flex: auto;
+  height: 1px;
+  background: #d1d1d1;
+  margin: 0 50rpx;
+}

@@ -1,0 +1,5 @@
+<view class="grace-empty">
+  <view class="grace-empty-icon {{'grace-empty-icon'+iconType}}" style="font-size:{{iconSize+'rpx'}}; line-height:{{(iconSize+10)+'rpx'}}; color:{{iconColor}}"></view>
+  <view class="grace-empty-text" wx:if="{{text != ''}}" style="font-size:{{textSize+'rpx'}}; line-height:{{(textSize+10)+'rpx'}}; color:{{textColor}}">{{text}}</view>
+  <slot></slot>
+</view>

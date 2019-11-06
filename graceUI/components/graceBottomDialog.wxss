@@ -1,0 +1,7 @@
+/* graceUI/components/graceBottomDialog.wxss */
+@keyframes gdIn{ from {bottom:-100px; } 100% { bottom: 0px; }}
+.gdIn {animation:gdIn 200ms linear;}
+.grace-btdialog-shade{position:fixed; width:100%; height:100%; left:0; top:0; z-index:9991; background:rgba(0, 0, 0, 0.5);}
+.grace-btdialog-shade .dialog{width:100%; height:auto; background:#FFFFFF; position:absolute; bottom:0; left:0;}
+.grace-btdialog-shade .title{width:100%;}
+.grace-btdialog-shade .content{width:100%;}

@@ -1,0 +1,14 @@
+<view class="grace-select-tags">
+  <radio-group wx:if="{{type == 'radio'}}" bindchange="graceSelectChange">
+    <label wx:for="{{tagsData}}" wx:key="{{index}}" class="{{item.checked ? 'grace-checked' : ''}}" 
+    style="background:{{item.checked ? selectedColor +' !important' : '#F6F7F8'}};">
+      <radio value="{{item.value}}" checked="{{item.checked}}"></radio>{{item.name}}
+    </label>
+  </radio-group>
+  <checkbox-group wx:if="{{type == 'checkbox'}}" bindchange="graceCheckBoxChange">
+    <label wx:for="{{tagsData}}" wx:key="{{index}}" class="{{item.checked ? 'grace-checked' : ''}}" 
+    style="background:{{item.checked ? selectedColor +' !important' : '#F6F7F8'}};">
+      <checkbox value="{{item.value}}" checked="{{item.checked}}"></checkbox>{{item.name}}
+    </label>
+  </checkbox-group>
+</view>

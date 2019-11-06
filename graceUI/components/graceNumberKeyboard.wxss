@@ -1,0 +1,10 @@
+/* graceUI/components/graceNumberKeyboard.wxss */
+@font-face {font-family:"gFont"; src:url('https://at.alicdn.com/t/font_1348701_jjwmoshd3l.ttf') format('truetype');}
+.graceNumberKeyboardFont-delete:before {font-family: "gFont" !important; content: "\e605";}
+.grace-mask{background:rgba(255, 255, 255, 0); position:fixed; width:100%; height:100%; left:0; top:0; z-index:1;}
+.grace-keyboard{background:#F4F5F6; position:fixed; width:100%; height:auto; left:0; bottom:0; z-index:99; padding:10px 0;}
+.grace-keyboard .keys-left{width:562rpx; float:left;}
+.grace-keyboard .keys-right{width:187rpx; float:right;}
+.grace-keyboard .keys{width:166rpx; height:100rpx; margin:10rpx; float:left; background:#FFFFFF; text-align:center; line-height:100rpx; border-radius:8rpx; font-weight:700; font-size:50rpx;}
+.grace-keyboard-done{height:340rpx !important; line-height:340rpx !important; font-size:36rpx !important; font-weight:400 !important; background:#00C777 !important; color:#FFFFFF !important;}
+.keydown{background:#00C777 !important; color:#FFFFFF !important;}

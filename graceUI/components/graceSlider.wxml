@@ -1,0 +1,6 @@
+<!--graceUI/components/graceSlider.wxml-->
+<view class='grace-slider'>
+	<view class="grace-slider-line" style="background:{{bgColor}}"></view>
+	<slider class='grace-sliders' block-color='{{blockColor}}' bindchange="change1" min='{{min1}}' max='{{max1}}' value='{{val1}}' activeColor='{{bgColor}}' backgroundColor='{{bgColor}}' />
+	<slider class='grace-sliders' block-color='{{blockColor}}' bindchange="change2" min='{{min2}}' max='{{max2}}' value='{{val2}}' activeColor='{{bgColor}}' backgroundColor='{{bgColor}}' />
+</view>

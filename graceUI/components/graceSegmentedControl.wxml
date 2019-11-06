@@ -1,0 +1,6 @@
+<!--graceUI/components/graceSegmentedControl.wxml-->
+<view class="gui-segmented-Control" style="height:{{height}}; border:{{border}}; border-color:{{color}};">
+  <view class="gsc-item" wx:for="{{items}}" wx:key="index" 
+  style="height:{{height}}; line-height:{{height}}; color:{{current == index ? '#FFFFFF' : color}}; background:{{current == index ? color : ''}}; fontSize:{{fontSize}};" 
+  catchtap="changeSC" data-index="{{index}}">{{item}}</view>
+</view>

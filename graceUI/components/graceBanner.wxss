@@ -1,0 +1,7 @@
+/* graceUI/components/graceBanner.wxss */
+.grace-banner{display:flex; flex-wrap:nowrap; justify-content:center; background:#FFFFFF; padding:30rpx; box-shadow:0px 0px 8px #D5D6D8; margin-top:20px; border-radius:8px;}
+.grace-banner .logo{width:100rpx; height:100rpx; margin-right:30rpx; font-size:0;}
+.grace-banner .logo image{width:100rpx; height:100rpx;}
+.grace-banner .body{width:auto; display:inline-block; margin-right:30px;}
+.grace-banner .body .title{font-size:32rpx; font-weight:700; color:#3688FF; line-height:1.5em;}
+.grace-banner .body .desc{font-size:22rpx; color:#A5A7B2; line-height:1.5em; margin-top:5px;}

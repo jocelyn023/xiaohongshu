@@ -1,0 +1,5 @@
+@font-face {font-family:"gFont"; src:url('https://at.alicdn.com/t/font_1348787_pdws9521tg.ttf') format('truetype');}
+.grace-stars{display:flex; flex-wrap:nowrap;}
+.grace-stars-items{display:inline-block; text-align:center; line-height:1.6em;}
+.grace-star-icon{font-family: "gFont" !important; font-size:60rpx; font-style:normal;}
+.grace-star-icon:before{content: "\e600";}
